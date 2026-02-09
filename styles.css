@@ -136,6 +136,7 @@ hr {
 }
 
 [data-tooltip]::before {
+    font-family: 'DM Sans';
     position: absolute;
     top: 110px;
     left: 80px;
@@ -155,6 +156,7 @@ hr {
 [data-tooltip]:hover::before {
     
     background: #0e0e10;
+    font-family: 'DM Sans';
     border: 0.1px solid #23242c;
     color: #3d3d4b;
     display: flex;
