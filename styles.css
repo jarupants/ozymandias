@@ -134,6 +134,45 @@ hr {
     background: radial-gradient(circle at center, #454755 0%, #000000 90%);
 }
 
+[data-tooltip]::before {
+    position: absolute;
+    top: 110px;
+    left: 80px;
+    content : attr(data-tooltip);
+    transition: 1s ease-out;
+
+    background: #0e0e10;
+    border: 0.1px solid #23242c;
+    color: #3d3d4b;
+    display: flex;
+    width:fit-content;
+    padding: 15px;
+
+    opacity : 0;
+}
+
+[data-tooltip]:hover::before {
+    
+    background: #0e0e10;
+    border: 0.1px solid #23242c;
+    color: #3d3d4b;
+    display: flex;
+    width:fit-content;
+    padding: 15px;
+    position: absolute;
+    top: 110px;
+    left: 80px;
+    transition: .4s ease-out;
+
+    opacity: 1;
+}
+
+[data-tooltip]:not([data-tooltip-persistent])::before {
+    pointer-events: none;
+    transition: .4s ease-out;
+}
+    
+
 /* CIRCLE FOR SEEK */
 
 #glow {
