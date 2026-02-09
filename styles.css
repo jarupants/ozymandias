@@ -124,9 +124,11 @@ hr {
 #gradientText {
     background: linear-gradient(to bottom, #0a0a0b, #1e1f26, #23242c, #ffffff);
     -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
     background-clip: text;
     color: transparent;
-    -webkit-text-fill-color: transparent;
+    transition: 0.4s ease out;
+    display: inline-block;
 }
 
 #gradientBackground {
