@@ -67,15 +67,18 @@ body {
 }
 
 .links {
+    font-family: 'DM Sans';
     line-height: 2;
     width: 100px;
 }
 
 #rightlinks {
+    font-family: 'DM Sans';
     justify-items: flex-end;
 }
 
 button {
+    font-family: 'DM Sans';
     background-color: #00000000;
     border: none;
     color: white;
